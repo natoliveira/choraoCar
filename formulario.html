@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Serviço Mecânico</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('imagens/imagem2.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 255, 0.6); 
+            padding: 40px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+          
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        label {
+            color: #fff;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="time"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #0073e6; /* Cor de fundo azul */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0058b3; /* Cor de fundo azul mais escura ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Agendamento de Serviço Mecânico</h1>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="data">Data do Serviço:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="horario">Horário do Serviço:</label>
+            <input type="time" id="horario" name="horario" required>
+
+            <label for="descricao">Descrição do Serviço:</label>
+            <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+            <input type="submit" value="Agendar">
+        </form>
+    </div>
+</body>
+</html>
